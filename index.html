@@ -5,48 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fetria</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6fb;
-      color: #111;
-    }
-    .wrap {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-    .card {
-      max-width: 700px;
-      width: 100%;
-      background: #ffffff;
-      padding: 32px;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .badge {
-      display: inline-block;
-      margin-bottom: 16px;
-      padding: 6px 14px;
-      border-radius: 999px;
-      background: #e0e7ff;
-      color: #1e3a8a;
-      font-size: 14px;
-    }
-    h1 {
-      margin: 0 0 10px;
-      font-size: 36px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      margin: 8px 0;
-    }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:#f4f6fb; color:#111; }
+    .wrap { min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px; }
+    .card { max-width:700px; width:100%; background:#fff; padding:32px; border-radius:18px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.1); text-align:center; }
+    .badge { display:inline-block; margin-bottom:16px; padding:6px 14px; border-radius:999px;
+             background:#e0e7ff; color:#1e3a8a; font-size:14px; }
+    h1 { margin:0 0 10px; font-size:36px; }
+    p { font-size:18px; line-height:1.6; margin:8px 0; }
+    .book { padding:14px; border:1px solid #eee; border-radius:12px; margin-bottom:14px; text-align:left; }
+    .btn { display:inline-block; background:#111; color:#fff; padding:10px 14px; border-radius:10px; text-decoration:none; }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <div class="card">
@@ -60,40 +31,25 @@
 
       <h2>📚 Mes livres</h2>
 
-      <div style="text-align:left; margin-top:16px">
+      <div style="margin-top:16px">
 
-        <div style="padding:14px; border:1px solid #eee; border-radius:12px; margin-bottom:14px">
-  <h3>📘 Livre 1</h3>
-  <div style="padding:14px; border:1px solid #eee; border-radius:12px; margin-bottom:14px">
-  <h3>📘 Livre 1</h3>
-  <p>Description du livre 1.</p>
-  <p><strong>Prix :</strong> 2 €</p>
-  <a href="https://wa.me/212661191676?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Livre%201"
-     style="display:inline-block; background:#111; color:#fff; padding:10px 14px; border-radius:10px; text-decoration:none">
-    Commander
-  </a>
-</div>
+        <div class="book">
+          <h3>📘 Livre 1</h3>
+          <p>Description du livre 1.</p>
+          <p><strong>Prix :</strong> 2 €</p>
+          <a class="btn" href="https://wa.me/212661191676?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Livre%201">Commander</a>
+        </div>
 
-
-  <a href="https://wa.me/212661191676?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Livre%201"
-     style="display:inline-block; background:#111; color:#fff; padding:10px 14px; border-radius:10px; text-decoration:none">
-    Commander
-  </a>
-</div>
-
+        <div class="book">
           <h3>📗 Livre 2</h3>
           <p>Description du livre 2.</p>
           <p><strong>Prix :</strong> 1 €</p>
-          <a href="mailto:contact@exemple.com?subject=Commande Livre 2"
-             style="display:inline-block; background:#111; color:#fff; padding:10px 14px; border-radius:10px; text-decoration:none">
-            Commander
-          </a>
-          <a href="https://wa.me/212661191676?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Livre%202"
-   style="display:inline-block; background:#111; color:#fff; padding:10px 14px; border-radius:10px; text-decoration:none">
-  Commander
-</a>
-  </div>
+          <a class="btn" href="https://wa.me/212661191676?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Livre%202">Commander</a>
+        </div>
+
+      </div>
+
+    </div>
   </div>
 </body>
-
 </html>
