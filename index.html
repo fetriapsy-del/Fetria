@@ -2,11 +2,60 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fetria</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6fb;
+      color: #111;
+    }
+    .wrap {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      max-width: 700px;
+      width: 100%;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      color: #1e3a8a;
+      font-size: 14px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 8px 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenue sur Fetria</h1>
-  <p>Site de vente de mes livres</p>
-  <p>Le site est en construction.</p>
+  <div class="wrap">
+    <div class="card">
+      <div class="badge">Fetria • Livres</div>
+      <h1>Bienvenue sur Fetria</h1>
+      <p>Site de vente de mes livres</p>
+      <p><strong>Le site est en construction.</strong></p>
+      <p>Les ouvrages seront bientôt disponibles.</p>
+    </div>
+  </div>
 </body>
 </html>
